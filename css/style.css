@@ -1,0 +1,345 @@
+
+.dropdown:hover >.dropdown-menu{
+    display: block;
+    margin-top: .125em;
+  }
+
+
+.dropdown-submenu1:hover > .dropdown-menu{
+    display: block;
+      left: 100%;
+      margin-top: -200px;
+  }
+
+.dropdown-submenu2:hover > .dropdown-menu{
+    display: block;
+      left: 100%;
+      margin-top: -155px;
+  }
+  
+.dropdown-toggle::after{
+    font-size: var(--font-md);
+    margin-bottom: -2px;
+  }
+
+.dropdown-menu li a.active{
+    color:#fff;
+  }
+  
+.custom-toggle-arrow{
+        font-size: 18px;
+        margin-top: 1px;
+        line-height: 12px;
+  }
+
+.carousel > .carousel-inner > .carousel-item > img{
+    width:750px; /* Yeap you can change the width and height*/
+    height:550px;
+}
+
+.carousel-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.square-container {
+  position: relative;
+  width: 60%; /* Adjust as needed */
+  padding-top: 60%; /* This makes the container square */
+  background-color: #0b0b0b;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-container h1,
+.square-container p,
+.square-container .btn {
+  color: #fff; /* Ensure text is visible on dark background */
+}
+
+.container-fluid {
+    background-image:url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.card-img-top{
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card{
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 1px 2px 0px;
+}
+.card-body{
+  padding: 25px;
+  margin-top: -15px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+}
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.btn-outline-light:hover {
+  color: black; /* Text color on hover */
+  border-color: black; /* Optional: border color on hover */
+}
+
+/* Ensure the dropdown arrow button aligns correctly */
+.nav-item .dropdown-toggle + .btn {
+  margin-left: 10px; /* Adjust as needed */
+  padding: 0.375rem 0.75rem; /* Adjust padding for sizing */
+}
+
+.nav-item .dropdown-toggle {
+  margin-right: 0; /* Adjust to ensure proper spacing */
+}
+
+/* Optional: Style the dropdown arrow button */
+.btn.dropdown-toggle {
+  background-color: transparent; /* Makes the button background transparent */
+  border: none; /* Removes border */
+  padding: 0; /* Adjust padding as needed */
+}
+
+.btn.dropdown-toggle .bi-caret-down {
+  font-size: 1.25rem; /* Adjust size of the caret */
+}
+
+.navbar-brand {
+  font-size: 25px;
+  font-weight: 200;
+  font-family: "Courgette", cursive;
+}
+/* Apply the Fondamento font to nav items */
+.navbar .nav-item .dropdown-item {
+  font-size: 15px;
+  font-weight: 450;
+  font-family: "Roboto";
+}
+
+.navbar {
+  font-size: 15px;
+  font-weight: 450;
+  font-family: "Roboto";
+}
+
+.navbar .nav-item .dropdown-item:hover {
+  background-color: rgb(26, 26, 26);
+  color: white;
+}
+
+.nav-item::after{
+  opacity: 0;
+  transition: all 0.5s;
+  content: '';
+  height: 2px;
+  width: 40px;
+  background-color: yellow;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-item:hover::after{ 
+  opacity: 1;
+}
+
+.carousel-caption .h1 {
+  font-family: "Courgette", cursive;/* Replace with your desired font-family */
+  font-size: 3rem; /* Adjust size as needed */
+  font-weight: bold; /* Adjust weight if necessary */
+  color: #fff; /* Adjust color if necessary */
+}
+
+.bg-breadcrumb {
+  position: relative; 
+  overflow: hidden; 
+  background:url(../img/bg.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 45px 0 45px 0;
+}
+.bg-breadcrumb::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Adjust the rgba values for your filter effect */
+  z-index: 1; /* Ensure the overlay is above the background but below the content */
+}
+
+.bg-breadcrumb > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* CSS to change the text color of breadcrumb links */
+.breadcrumb-item a {
+  color: #ffffff; /* Replace with your desired color */
+}
+
+/* Optional: Change the color of the active breadcrumb item */
+.breadcrumb-item.active a {
+  color: #f2f2f2;  /* Replace with your desired color for active state */
+}
+
+.breadcrumb-item.active a:hover {
+  color: rgb(245, 209, 5);
+}
+
+.headertitle {
+  font-family: "Courgette";
+  font-weight: 300;
+  color:rgb(0, 0, 0) ;
+}
+
+
+.aboutus-title{
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin: 0 0 39px;
+  padding: 0 0 15px;
+  position: relative;
+  color: #000;
+}
+.aboutus-title::after {
+  background: #fdba01 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 45px;
+}
+.aboutus-text {
+  color: #606060;
+  font-size: 13px;
+  line-height: 22px;
+  margin: 0 0 35px;
+}
+
+a:hover, a:active {
+  color: #ffb901;
+  text-decoration: none;
+  outline: 0;
+}
+.nav-link:hover{
+  color: #ffb901;
+  text-decoration: none;
+  outline: 0;
+}
+
+.titlecarousel {
+  color: #e8ebed;
+  font-size: 38px;
+  margin: 0 0 15px;
+  padding: 0 0 5px;
+  position: relative;
+}
+
+.titlecarousel::after {
+  background: #fdba01;
+  content: "";
+  height: 2px;
+  width: 45px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.row.alternate-layout {
+  display: flex;
+  align-items: stretch; 
+  flex-wrap: wrap;
+}
+
+.text-content,
+.image-content {
+  display: flex;
+  align-items: center; /* Center the content vertically */
+}
+
+.aboutus-banner {
+  width: 100%; /* Ensures the banner takes up the full width of its container */
+  height: 100%; /* Ensures the banner takes up the full height of its container */
+  overflow: hidden; /* Ensures the content does not overflow */
+}
+
+.aboutus-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without stretching */
+  display: block; /* Removes bottom space caused by inline-block images */
+}
+
+/* For section height to be responsive, consider setting a minimum height */
+.aboutus-section {
+  min-height: 300px; /* Adjust as needed */
+}
+
+/* Ensure the image is responsive and well-styled */
+.aboutus-image {
+  width: 100%; /* Makes the image fill its container */
+  height: auto; /* Keeps the image's aspect ratio */
+}
+
+/* Add margin to the bottom of the image column for vertical spacing */
+.mb-4 {
+  margin-bottom: 2.5rem; /* Adjust this value to change the spacing */
+}    
+
+
+#sidebarMenu {
+      width: 250px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      overflow-y: auto;
+      z-index: 100;
+    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+/* Ensure spacing on larger screens */
+@media (min-width: 768px) {
+  .mb-md-0 {
+      margin-bottom: 0; /* Removes margin on medium screens and up */
+  }
+}
+
+

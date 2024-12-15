@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Admin Page</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MDB icon -->
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  </head>
+
+  <body>
+  <header>
+    <!-- Start your project here-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand mt-2 mt-lg-0" href="#">
+      <img src="img/logo.png" height="40" width="40" loading="lazy" />
+    </a>
+    <a class="navbar-brand" href="#">Brainy Bee</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Dashboard Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="adminpage.html" id="dashboardDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Konten Web
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dashboardDropdown">
+            <li><a class="dropdown-item" href="editpelayanan.html">Pelayanan</a></li>
+            <li><a class="dropdown-item" href="editpublikasi.html">Publikasi</a></li>
+            <li><a class="dropdown-item" href="editinstitut.html">Institute</a></li>
+            <li><a class="dropdown-item" href="editproject.html">Project</a></li>
+            <li><a class="dropdown-item" href="editproduk.html">Produk</a></li>
+            <li><a class="dropdown-item" href="edittentang.html">Tentang</a></li>
+            <li><a class="dropdown-item" href="editkontak.html">Kontak</a></li>
+          </ul>
+        </li>
+
+        <!-- Orderan Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="orderanDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Artikel
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="orderanDropdown">
+            <li><a class="dropdown-item" href="artikelpost.html">Postingan</a></li>
+            <li><a class="dropdown-item" href="riwayatartikel.html">Riwayat</a></li>
+          </ul>
+        </li>
+
+        <!-- Pengaturan Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pengaturanDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Pengaturan
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="pengaturanDropdown">
+            <li><a class="dropdown-item" href="#">Pengaturan Akun</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <!-- Search Form -->
+      <form class="d-flex input-group w-auto">
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+          aria-describedby="search-addon" />
+        <span class="input-group-text border-0" id="search-addon">
+          <i class="fas fa-search"></i>
+        </span>
+      </form>
+
+      <!-- Logout Button -->
+      <div class="dropdown">
+        <button class="btn btn-outline-danger" type="button">
+          <a class="nav-link" href="index.html">Logout</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Include Bootstrap JavaScript (place at end of body for faster page load) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <div class="container-fluid" style="background-color:black;color: white;">
+        <h3 class="text-center">Publikasi</h3>
+    </div>
+
+    <div class="container">
+        <!-- Penerbitan Table -->
+        <div class="d-flex justify-content-between align-items-center">
+            <h4>Jurnal</h4>
+            <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#entryModal" onclick="setSection('Penerbitan')">
+                <i class="fas fa-plus"></i> Add New Entry
+            </button>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Entry</th>
+                    <th>Section Edited</th>
+                    <th>Date/Time Edited</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="penerbitanTableBody">
+                <tr>
+                    <td>1</td>
+                    <td>Entry 1</td>
+                    <td>Jurnal</td>
+                    <td>2024-10-27 10:00</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm">
+                            <i class="fas fa-edit"></i> Edit
+                        </button>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+        <div class="container">
+        <!-- Penerbitan Table -->
+        <div class="d-flex justify-content-between align-items-center">
+            <h4>Buku</h4>
+            <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#entryModal" onclick="setSection('Penerbitan')">
+                <i class="fas fa-plus"></i> Add New Entry
+            </button>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Entry</th>
+                    <th>Section Edited</th>
+                    <th>Date/Time Edited</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="penerbitanTableBody">
+                <tr>
+                    <td>1</td>
+                    <td>Entry 1</td>
+                    <td>Buku</td>
+                    <td>2024-10-27 10:00</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm">
+                            <i class="fas fa-edit"></i> Edit
+                        </button>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+        <div class="container">
+        <!-- Penerbitan Table -->
+        <div class="d-flex justify-content-between align-items-center">
+            <h4>Bulletin</h4>
+            <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#entryModal" onclick="setSection('Penerbitan')">
+                <i class="fas fa-plus"></i> Add New Entry
+            </button>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Entry</th>
+                    <th>Section Edited</th>
+                    <th>Date/Time Edited</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="penerbitanTableBody">
+                <tr>
+                    <td>1</td>
+                    <td>Entry 1</td>
+                    <td>Bulletin</td>
+                    <td>2024-10-27 10:00</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm">
+                            <i class="fas fa-edit"></i> Edit
+                        </button>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+     
+        <div class="container">
+        <!-- Penerbitan Table -->
+        <div class="d-flex justify-content-between align-items-center">
+            <h4>Artikel</h4>
+            <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#entryModal" onclick="setSection('Penerbitan')">
+                <i class="fas fa-plus"></i> Add New Entry
+            </button>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Entry</th>
+                    <th>Section Edited</th>
+                    <th>Date/Time Edited</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="penerbitanTableBody">
+                <tr>
+                    <td>1</td>
+                    <td>Entry 1</td>
+                    <td>Artikel</td>
+                    <td>2024-10-27 10:00</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm">
+                            <i class="fas fa-edit"></i> Edit
+                        </button>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+     
+    <!-- Modal for Adding New Entry -->
+    <div class="modal fade" id="entryModal" tabindex="-1" aria-labelledby="entryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="entryModalLabel">Add New Entry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="entryForm">
+                        <div class="mb-3">
+                            <label for="entryName" class="form-label">Entry Name</label>
+                            <input type="text" class="form-control" id="entryName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="entryDescription" class="form-label">Description</label>
+                            <textarea class="form-control" id="entryDescription" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="entryDate" class="form-label">Date/Time</label>
+                            <input type="datetime-local" class="form-control" id="entryDate" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="confirmAddEntryBtn">Add Entry</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        let currentSection = '';
+
+        function setSection(section) {
+            currentSection = section;
+        }
+
+        document.getElementById('confirmAddEntryBtn').addEventListener('click', function() {
+            const entryName = document.getElementById('entryName').value;
+            const entryDescription = document.getElementById('entryDescription').value;
+            const entryDate = document.getElementById('entryDate').value;
+
+            const confirmMessage = `Are you sure you want to add the entry: ${entryName}?`;
+            if (confirm(confirmMessage)) {
+                const newRow = document.createElement('tr');
+                newRow.innerHTML = `
+                    <td></td>
+                    <td>${entryName}</td>
+                    <td>${currentSection}</td>
+                    <td>${entryDate}</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm">
+                            <i class="fas fa-edit"></i> Edit
+                        </button>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                `;
+                document.getElementById(`${currentSection.toLowerCase()}TableBody`).appendChild(newRow);
+                document.getElementById('entryForm').reset();
+                $('#entryModal').modal('hide');
+            }
+        });
+    </script>
+
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+</body>
+
+</html>
+
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+<!-- Navbar -->
+
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img
+            src="img/logo.png"
+            height="40"
+            width="40"
+            loading="lazy"
+          />
+        </a>
+        
+        <a class="navbar-brand" href="index.html">Brainy Bee</a>
+        <button
+          data-mdb-collapse-init
+          class="navbar-toggler"
+          type="button"
+          data-mdb-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item dropdown d-flex align-items-center">
+              <a class="nav-link active" href="pelayanan.html" aria-expanded="false">Pelayanan</a> 
+            <button class="btn btn-secondary dropdown-toggle" type="button" aria-expanded="false">
+              <i class="bi bi-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li class = "dropdown-submenu1" aria-labelledby="navbarDropdown">
+                <a 
+                class="dropdown-item" 
+                href="pelayanan.html"
+                role="button"
+                data-bs-auto-close="outside"
+                >Penerbitan<span
+                class="float-end custom-toggle-arrow">&#187
+                </span>
+                </a>
+                
+                <ul class="dropdown-menu dropdown">              
+                  <li>
+                    <a class="dropdown-item" href="pelayanan.html">Menerbitkan Buku</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pelayanan.html">Menurunkan Peresentase Plagiasi</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pelayanan.html">Terjemahan</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pelayanan.html">Pengurusan HKI</a>
+                  </li>
+                </ul>
+
+              </li>              
+              
+              <li class ="dropdown-submenu2">
+                <a 
+                class="dropdown-item" 
+                ref="#"
+                role="button"
+                data-bs-auto-close="outside"
+                >Percetakkan<span
+                class="float-end custom-toggle-arrow">&#187
+                </span>
+              </a>
+
+              <ul class="dropdown-menu dropdown">              
+                <li>
+                  <a class="dropdown-item" href="pelayanan.html">Pengadaan Buku</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pelayanan.html">Konversi Artikel Ilmiah Menjadi Buku</a>
+                </li>
+              </ul>
+
+              </li>
+              <li>
+                <a class="dropdown-item" href="pelayanan.html">Fasilitas</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="pelayanan.html">Laboratorium</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="pelayanan.html">Lainnya</a>
+              </li>
+            </ul>
+            </li>
+
+            <li class="nav-item dropdown d-flex align-items-center">
+              <a class="nav-link active" href="publikasi.html" aria-expanded="false">Publikasi</a>
+
+            <button class="btn btn-secondary dropdown-toggle" type="button" aria-expanded="false">
+              <i class="bi bi-caret-down"></i>
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://ejournal.brainybee.co.id/index.php/jotdiverse/index">Jurnal<i class="fa-sharp fa-solid fa-arrow-up-right-from-square" style="padding-left: 65px;"></i></a></li>
+                <li><a class="dropdown-item" href="produk.html">Buku</a></li>
+                <li><a class="dropdown-item" href= "newsletter.html">Buletin</a></l>
+                <li><a class="dropdown-item" href= "article.html">Artikel</a></l>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown d-flex align-items-center">
+              <a class="nav-link active" href="institute.html" aria-expanded="false">Institute</a>
+            <button class="btn btn-secondary dropdown-toggle" type="button" aria-expanded="false">
+              <i class="bi bi-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Lembaga Pendidikan & Pelatihan</a></li>
+              <li><a class="dropdown-item" href="#">Lembaga Pengabdian</a></li>
+              <li><a class="dropdown-item" href= "#">Lembaga Kerjasama</a></li>
+            </ul>
+            </li>
+      
+            <li class="nav-item dropdown d-flex align-items-center">
+              <a class="nav-link active" href="project.html" aria-expanded="false">Project</a>
+
+            <button class="btn btn-secondary dropdown-toggle" type="button" aria-expanded="false">
+              <i class="bi bi-caret-down"></i>
+            </button>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://ibcraja4.org/">Projek Raja Ampat <i class="fa-sharp fa-solid fa-arrow-up-right-from-square" style="padding-left: 65px;"></i></a></li>
+                  <li><a class="dropdown-item" href="https://ibcraja4.org/">Upcoming Project</a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link active" href="produk.html" role="button"aria-expanded="false">Produk</a>
+            </li>
+                        
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link active" href="tentang.html" aria-expanded="false">Tentang</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link active" href="kontak.html" aria-expanded="false">Kontak</a>
+            </li>
+          </ul>
+          
+          <form class="d-flex input-group w-auto">
+            <input
+              type="search"
+              class="form-control rounded"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="search-addon"
+            />
+            <span class="input-group-text border-0" id="search-addon">
+              <i class="fas fa-search"></i>
+            </span>
+          </form>
+            <a class="nav-link active"
+            href="http://127.0.0.1:8000/admin/login/?next=/admin/">
+              Login</a>
+        </div>
+      </div>
+    </nav>
+    
+<body>
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h1 class="headertitle">About Us</h1>
+        <ol class="breadcrumb d-flex justify-content-center mb-0">
+            <li class="breadcrumb-item active"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active"><a href="tentang.html">Tentang</a></li>
+        </ol>    
+    </div>
+</div>
+<div class= "container-fluid" style="text-align: center; background-color:#262626;padding-top: 6px;padding-bottom: 6px;">
+  <h3 style="font-family: 'Rajdhani', sans-serif; color: #ececec;">Profil Perusahan</h>
+</div>
+<div class="container">
+<section style="background-color:#e8ebed;">
+  <div class="container">
+      <div class="row align-items-center"style="padding-top:50px; padding-bottom:20px;">
+          <!-- Image Column -->
+          <div class="col-md-6 col-sm-12">
+            <div class="container">
+              <img src="img/aboutus.jpg"class="img-fluid aboutus-image"style="
+            border: 5px solid #daa520;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+            border-radius: 9px; 
+            transition: box-shadow 0.3s ease-in-out;
+            width: 95%; height: auto;">
+            </div>
+          </div>
+          <!-- Text Column -->
+          <div class="col-md-6 col-sm-12">
+            <div class="container">
+              <div class="aboutus">
+                  <h4 class="aboutus-title">Tentang Penerbit Brainy Bee</h4>
+                  <p class="aboutus-text">Brainy Bee adalah perusahaan yang bergerak dalam berbagai bidang termasuk penerbitan buku cetak dan elektronik. Penerbit Brainy Bee dapat menjadi tempat penulis untuk menerbitkan karya terbaiknya dalam bentuk buku cetak dan digital (ebook). Brainy Bee hadir dengan berbagai program penerbitan dan penulisan yang seru dalam semangat.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<div class="aboutus-section">
+  <div class="container">
+    <div class="row align-items-center"style="padding-top:50px; padding-bottom:40px;">        
+        <div class="col-md-6 col-sm-12">
+          <div class="aboutus">
+              <h4 class="aboutus-title">Visi</h4>
+                <p class="aboutus-text">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+          </div>
+
+           <div class="aboutus">
+            <h4 class="aboutus-title">Misi</h4>
+            <p class="aboutus-text">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+           </div>
+        </div>
+          <!-- Image Column -->
+          <div class="col-md-6 col-sm-12">
+              <img src="img/visimisi.jpg" alt="About Us Image" class="img-fluid aboutus-image"style="
+            border: 5px solid #000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+            border-radius: 9px; 
+            transition: box-shadow 0.3s ease-in-out;
+            width: 95%; height: auto;">
+          </div>                             
+     </div>
+  </div>
+</div>
+
+<section style="background-color:#e8ebed;">
+  <div class="container">
+    <div class="row align-items-center" style="padding-top:50px; padding-bottom:40px;">   
+        <!-- Image Column -->
+        <div class="col-md-6 col-sm-12">
+           <img src="img/roadmap.jpg" alt="About Us Image" class="img-fluid aboutus-image"style="
+            border: 5px solid #daa520;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+            border-radius: 9px; 
+            transition: box-shadow 0.3s ease-in-out;
+            width: 95%; height: auto;">
+        </div>    
+
+        <div class="col-md-6 col-sm-12">
+          <div class="aboutus">
+              <h4 class="aboutus-title">Restra & Renop</h4>
+                <p class="aboutus-text">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+          </div>
+
+           <div class="aboutus">
+            <h4 class="aboutus-title">Roadmap</h4>
+            <p class="aboutus-text">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+           </div>
+        </div>
+     </div>
+   </div>
+  </section>
+ </div>  
+</body>
+<!-- Footer -->
+<footer class="text-center text-lg-start" style="background-color: #0b0b0b; color: #f8f9fa;"> 
+  <section class="footer1">
+    <div class="container text-center text-md-start mt-5">
+
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="margin-top: 45px">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4" style="color: #f8f9fa;">
+            <img src="img/logo.png" alt="Icon" class="me-3" style="height: 30px; width: auto;">
+            Penerbit Brainy Bee
+          </h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="margin-top: 45px">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4" style="color: #f8f9fa;">
+            Pelayanan
+          </h6>
+          <p>
+            <a href="#!" class="text-reset" style="color: #adb5bd;">Penerbitan</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset" style="color: #adb5bd;">Percetakkan</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset" style="color: #adb5bd;">Fasilitas</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset" style="color: #adb5bd;">Laboratorium</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="margin-top: 45px">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4" style="color: #f8f9fa;">
+            Publikasi
+          </h6>
+          <p>
+            <a href="#!" class="text-reset" style="color: #adb5bd;">Jurnal</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset" style="color: #adb5bd;">Buku</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset" style="color: #adb5bd;">Buletin</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset" style="color: #adb5bd;">Lainnya</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="margin-top: 45px">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4" style="color: #f8f9fa;">Kontak</h6>
+          <p><i class="fas fa-home me-3" style="color: #adb5bd;"></i>Malang, East Java, Indonesia</p>
+          <p>
+            <i class="fas fa-envelope me-3" style="color: #adb5bd;"></i>
+            h_toha@unipa.ac.id
+          </p>
+          <p>
+            <i class="fas fa-envelope me-3" style="color: #adb5bd;"></i>
+            muhdailami@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3" style="color: #adb5bd;"></i> + 62 ---------</p>
+          <p><i class="fas fa-phone me-3" style="color: #adb5bd;"></i> + 62 ---------</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color:#000000;">
+    © 2024 Copyright:
+    <a class="text-reset fw-bold" href="index.html" style="color:black;">Penerbit Brainy Bee</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<!-- Footer -->
+</html>
+
+
+
+
+
+

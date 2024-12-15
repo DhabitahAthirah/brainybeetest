@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Edit Data</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img
+            src="img/logo.png"
+            height="40"
+            width="40"
+            loading="lazy"
+          />
+        </a>
+        <a class="navbar-brand" href="#">Brainy Bee</a>
+        <button
+          data-mdb-collapse-init
+          class="navbar-toggler"
+          type="button"
+          data-mdb-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="adminpage.html">Dashboard</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+            data-mdb-dropdown-init
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            aria-expanded="false">Tambah Data</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" ref="#">Tentang</a>
+              </li>  
+              <li>
+                <a class="dropdown-item" href="#">Pelayanan</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Institute</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Publikasi</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Project</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">DLL</a>
+              </li>  
+            </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+            data-mdb-dropdown-init
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-auto-close="outside"
+            aria-expanded="false">Edit Data</a> 
+            
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" ref="#">Tentang</a>
+              </li>  
+              <li>
+                <a class="dropdown-item" href="#">Pelayanan</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Institute</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Publikasi</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Project</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">DLL</a>
+              </li>  
+            </ul>
+            <li class="nav-item dropdown">
+              <a
+            data-mdb-dropdown-init
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-auto-close="outside"
+            aria-expanded="false">Hapus Data</a> 
+            
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" ref="#">Tentang</a>
+              </li>  
+              <li>
+                <a class="dropdown-item" href="#">Pelayanan</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Institute</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Publikasi</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Project</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">DLL</a>
+              </li>  
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link"href="#" role="button" aria-expanded="false">Pengaturan</a>
+             </li> 
+            <li class="nav-item">          
+              <a class="nav-link" href="#" role="button" aria-expanded="false">Riwayat</a>            
+            </li> 
+          </ul>
+      </li>
+
+           <form class="d-flex input-group w-auto">
+            <input
+              type="search"
+              class="form-control rounded"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="search-addon"
+            />
+            <span class="input-group-text border-0" id="search-addon">
+              <i class="fas fa-search"></i>
+            </span>
+          </form>
+          <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+          <!-- Custom scripts -->
+          <script type="text/javascript"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+      
+          <div class="dropdown">
+            <button
+            class= "btn btn-outline-danger"
+            type="button"
+            data-mdb-ripple-init
+            aria-expanded="false"><a class="nav-link" href="index.html">  
+              Logout</a>
+            </button>
+              </div>
+
+        </div>
+      </div>
+</nav>
+<!-- start: Sidebar -->
+<div class="bg-light p-5 rounded">
+    <h1>Hapus Bagian Tentang</h1>
+    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
+    <a class="btn btn-lg btn-primary" href="#" role="button">Hapus</a>
+  </div>
+  <div class="bg-light p-5 rounded">
+    <h1>Hapus Bagian Pelayanan</h1>
+    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
+    <a class="btn btn-lg btn-primary" href="#" role="button">Hapus</a>
+  </div>
+  <div class="bg-light p-5 rounded">
+    <h1>Hapus Bagian Institute</h1>
+    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
+    <a class="btn btn-lg btn-primary" href="#" role="button">Hapus</a>
+  </div>
+  <div class="bg-light p-5 rounded">
+    <h1>Hapus Bagian Publikasi</h1>
+    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
+    <a class="btn btn-lg btn-primary" href="#" role="button">Hapust</a>
+  </div>
+  <div class="bg-light p-5 rounded">
+    <h1>Hapus Bagian Project</h1>
+    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
+    <a class="btn btn-lg btn-primary" href="#" role="button">Hapus</a>
+  </div>
+  <div class="bg-light p-5 rounded">
+    <h1>Hapus Bagian DLL</h1>
+    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
+    <a class="btn btn-lg btn-primary" href="#" role="button">Hapus</a>
+  </div>
+
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+</body>
+
+</html>
